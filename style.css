@@ -1,3 +1,4 @@
-.menu-div{
-    text-decoration: none;
+.menu-ul{
+    display: flex;
+    list-style: none;
 }
