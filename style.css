@@ -1,11 +1,11 @@
 .navbar-ul{
     display: flex;
     list-style: none;
+    justify-content: flex-end;
 }
 .navbar-ul li{
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 1em;
     font-weight: 900;
     padding: 5px 10px;
-    float: right;
 }
