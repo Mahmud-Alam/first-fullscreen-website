@@ -1,5 +1,21 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+html, body{                 /*HTML use na korle fullscreen e height pae na */
+    height: 100%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.header{
+    height: 100%;
+    background-image: url("images/landscape-moon-digital-evening-5k-uz-3840x2160.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
 .container{
     width: 80%;
+    height: 100%;
     margin: 0 auto;
 }
 .navbar-ul{
@@ -8,8 +24,32 @@
     justify-content: flex-end;
 }
 .navbar-ul li{
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 1em;
     font-weight: 900;
     padding: 10px 20px;
+    margin: 15px;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+@-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #00e6d3;
+    }
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #4dfff6,  0 0 40px #4dfff6;
+    }
+  }
+
+.navbar-ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+.footer{
+    position: absolute;
+    bottom: 0px;
+    padding: 5px;
+    width: 80%;
+    text-align: right;
 }
