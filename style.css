@@ -53,7 +53,30 @@ html, body{                 /*HTML use na korle fullscreen e height pae na */
     bottom: 0px;
     padding: 5px;
     width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer p{
     text-align: right;
+}
+.footer .social-icon-ul{
+    display: flex;
+    list-style: none;
+}
+.footer .social-icon-ul li{
+    width: 25px;
+    margin: 0 5px;
+}
+.footer .social-icon-ul li img:hover{
+    background-color: #2ba3ff;
+    border-radius: 12%;
+}
+.footer .social-icon-ul li img{
+    width: 100%;
+}
+.footer .social-icon{
+    padding: 0 5%;
 }
 .box-area{
     /* position: absolute; */
