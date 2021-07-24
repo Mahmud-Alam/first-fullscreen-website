@@ -49,6 +49,10 @@ html, body{                 /*HTML use na korle fullscreen e height pae na */
 }
 .a:hover{
     color: #4dfff6;
+    text-shadow: none;
+}
+.a-yellow{
+    color: rgb(255, 230, 0);
 }
 
 .footer{
@@ -298,23 +302,25 @@ html, body{                 /*HTML use na korle fullscreen e height pae na */
     height: 380px;
     background-color: rgb(25,102,122, 0.5);
     color: #fff;
-    border: 5px solid #19667a;
-    border-color: #19667a #19667a transparent #19667a ;
+    border: 5px solid #ffffff;
     border-radius: 10px;
+    box-shadow: 0px 0px 20px #fff;
     padding: 30px;
     position: absolute;
     z-index: 1;
     top: 700%;
     margin-left: -80px;
+    cursor: default;
   }
   .popup .popup-div::after {
     content: " ";
     position: absolute;
     bottom: 100%;
     margin-left: -40px;
+    margin-bottom: 5px;
     border-width: 30px;
     border-style: solid;
-    border-color: transparent transparent #19667a transparent;
+    border-color: transparent transparent #ffffff transparent;
   }
   .popup .popup-div .popup-p{
     text-shadow: none;
