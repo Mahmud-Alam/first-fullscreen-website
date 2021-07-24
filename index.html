@@ -7,6 +7,7 @@
     <title>Mahmmud Alam</title>
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="images/MahmudAlamLogo.png" type="image/x-icon">
+    <script src="main.js"></script>
 </head>
 <body>
     <div class="header">
@@ -14,19 +15,42 @@
             <nav class="navbar">
                 <ul class="navbar-ul">
                     <li><a href="">Home</a></li>
-                    <li><a href="">About</a></li>
-                    <li><a href="">Servies</a></li>
-                    <li><a href="">Blog</a></li>
-                    <li><a class="popup-contact" onclick="myFunction()">Contact
-                            <div class="popup-contact-div" id="myPopup">
-                                <p class="popup-contact-p">
+                    <li><div class=" popup popup-about" onclick="popupAboutFunction()">About
+                            <div class=" popup-div popup-about-div" id="popupAbout">
+                                <p class="popup-p">
+                                    Hello Sir,<br>
+                                    Here is my all About.
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li><div class=" popup popup-service" onclick="popupServiceFunction()">Services
+                            <div class=" popup-div popup-Service-div" id="popupService">
+                                <p class="popup-p">
+                                    Hello Sir,<br>
+                                    Here is my all Services.
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li><div class=" popup popup-blog" onclick="popupBlogFunction()">Blog
+                            <div class=" popup-div popup-blog-div" id="popupBlog">
+                                <p class="popup-p">
+                                    Hello Sir,<br>
+                                    Here is my all blogs.
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li><div class=" popup popup-contact" onclick="popupContactFunction()">Contact
+                            <div class=" popup-div popup-contact-div" id="popupContact">
+                                <p class="popup-p">
                                     Hello Sir,<br>
                                     I'm Mahmud Alam. I'm from Dhaka, Bangladesh.
-                                    I'm a Web Developer and also UI,UX designer. If you want to hire me or contact me, here is my facebook handle - Mahmud Alam.<br>You also can contact with me via LinkedIn. All my social media handles are given below. Thank you.
+                                    I'm a Web Developer and also UI,UX designer. If you want to hire me or contact me, here is my facebook handle - <a class="a" target="_blank" href="https://www.facebook.com/mahmudalam.badhan">Mahmud Alam.</a><br>You also can contact with me via LinkedIn. All my social media handles are given below. Thank you.
                                 </p>
-                                
                             </div>
-                        </a>
+                        </div>
                     </li>
                 </ul>
             </nav>
@@ -51,7 +75,7 @@
                         <li><a target="_blank" href="https://www.twitter.com/"><img src="images/twitter-3-xl.png" alt=""></a></li>
                     </ul>
                 </div>
-                <p>@2021 <a href="#">Mahmud Alam</a>. All rights reserved.</p>
+                <p>@2021 <a class="a" href="#">Mahmud Alam</a>. All rights reserved.</p>
             </div>
         </div>
         <div class="box-animation">
@@ -69,11 +93,5 @@
             </ul>
         </div>
     </div>
-    <script>
-        function myFunction() {
-          var popup = document.getElementById("myPopup");
-          popup.classList.toggle("show");
-        }
-    </script>
 </body>
 </html>

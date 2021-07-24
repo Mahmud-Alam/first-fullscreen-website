@@ -1,6 +1,7 @@
 *{
     padding: 0;
     margin: 0;
+    text-decoration: none;
 }
 html, body{                 /*HTML use na korle fullscreen e height pae na */
     height: 100%;
@@ -25,6 +26,7 @@ html, body{                 /*HTML use na korle fullscreen e height pae na */
     justify-content: flex-end;
 }
 .navbar-ul li{
+    color: white;
     font-size: 1em;
     font-weight: 900;
     padding: 10px 20px;
@@ -42,9 +44,11 @@ html, body{                 /*HTML use na korle fullscreen e height pae na */
     }
   }
 
-.navbar-ul li a{
+.a{
     color: white;
-    text-decoration: none;
+}
+.a:hover{
+    color: #4dfff6;
 }
 
 .footer{
@@ -276,8 +280,10 @@ html, body{                 /*HTML use na korle fullscreen e height pae na */
 	transition-delay: 0.75s;
 }
 
-/* Popup container - can be anything you want */
-.popup-contact {
+
+
+/* Popup start from here */
+.popup {
     position: relative;
     display: inline-block;
     cursor: pointer;
@@ -286,9 +292,7 @@ html, body{                 /*HTML use na korle fullscreen e height pae na */
     -ms-user-select: none;
     user-select: none;
   }
-  
-  /* The actual popup */
-  .popup-contact .popup-contact-div {
+  .popup .popup-div {
     visibility: hidden;
     width: 450px;
     height: 380px;
@@ -296,35 +300,64 @@ html, body{                 /*HTML use na korle fullscreen e height pae na */
     color: #fff;
     border: 5px solid #19667a;
     border-color: #19667a #19667a transparent #19667a ;
-    border-radius: 6px;
+    border-radius: 10px;
     padding: 30px;
     position: absolute;
     z-index: 1;
-    top: 800%;
-    left: -490%;
+    top: 700%;
     margin-left: -80px;
-    animation: none;
   }
-  .popup-contact .popup-contact-div .popup-contact-p{
-      text-shadow: none;
-      line-height: 26px;
-      text-align: justify;
-  }
-  
-  /* Popup arrow */
-  .popup-contact .popup-contact-div::after {
+  .popup .popup-div::after {
     content: " ";
     position: absolute;
     bottom: 100%;
-    left: 80%;
     margin-left: -40px;
     border-width: 30px;
     border-style: solid;
     border-color: transparent transparent #19667a transparent;
   }
+  .popup .popup-div .popup-p{
+    text-shadow: none;
+    line-height: 26px;
+    text-align: justify;
+    text-shadow: 1px 1px 2px black;
+}
+
+/* Popup for Contact  */
+  .popup-contact .popup-contact-div{
+    left: -490%;
+  }
+  .popup-contact .popup-contact-div::after{
+    left: 80%;
+  }
+
+  /* Popup for Blog*/
+  .popup-blog .popup-blog-div {
+    left: -580%;
+  }
+  .popup-blog .popup-blog-div::after {
+    left: 50%;
+  }
+
+  /* Popup for Services*/
+  .popup-service .popup-service-div {
+    left: -580%;
+  }
+  .popup-service .popup-service-div::after {
+    left: 50%;
+  }
+
+  /* Popup for About*/
+  .popup-about .popup-about-div {
+    left: -580%;
+  }
+  .popup-about .popup-about-div::after {
+    left: 50%;
+  }
+  
   
   /* Toggle this class - hide and show the popup */
-  .popup-contact .show {
+  .popup .show {
     visibility: visible;
     -webkit-animation: fadeIn 1s;
     animation: fadeIn 1s;
