@@ -336,23 +336,23 @@ html, body{                 /*HTML use na korle fullscreen e height pae na */
     left: -580%;
   }
   .popup-blog .popup-blog-div::after {
-    left: 50%;
+    left: 55%;
   }
 
   /* Popup for Services*/
   .popup-service .popup-service-div {
-    left: -580%;
+    left: -80%;
   }
   .popup-service .popup-service-div::after {
-    left: 50%;
+    left: 35%;
   }
 
   /* Popup for About*/
   .popup-about .popup-about-div {
-    left: -580%;
+    left: 150%;
   }
   .popup-about .popup-about-div::after {
-    left: 50%;
+    left: 10%;
   }
   
   
